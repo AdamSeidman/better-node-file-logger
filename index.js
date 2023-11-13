@@ -28,7 +28,7 @@ let logger = {
 
     /**
      * Quickly initialize a custom logging scheme
-     * @param {string} prefix - "fileNamePrefiix" of logging files 
+     * @param {string} prefix - "fileNamePrefix" of logging files 
      */
     quickInit: function(prefix) {
         parentLogger.SetUserOptions({
