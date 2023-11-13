@@ -16,7 +16,11 @@ const getCallingService = function() {
 
 // Get basic method name.
 const getCallingMethod = function() {
-    return new Error('').stack.split('\n')[3].slice(7).split(' ')[0];
+    var method = new Error('').stack.split('\n')[3].slice(7).split(' ')[0];
+    if (method.indexOf('Object.') === 0) {
+        method = method.slice(7);
+    }
+    return method;
 };
 
 let logger = {
