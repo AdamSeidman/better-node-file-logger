@@ -1,0 +1,31 @@
+{
+  "name": "better-node-file-logger",
+  "version": "1.0.0",
+  "description": "NPM package node-file-logger made easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamSeidman/better-node-file-logger.git"
+  },
+  "keywords": [
+    "file",
+    "logger",
+    "logging",
+    "node-file-logger",
+    "logger",
+    "file",
+    "logging"
+  ],
+  "author": "Adam Seidman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamSeidman/better-node-file-logger/issues"
+  },
+  "homepage": "https://github.com/AdamSeidman/better-node-file-logger#readme",
+  "dependencies": {
+    "node-file-logger": "^0.9.5"
+  }
+}
