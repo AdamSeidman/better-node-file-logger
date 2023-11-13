@@ -39,7 +39,7 @@ let logger = {
      * @param {function} callback - Optional callback method
      */
     Debug: function(message, errorObj, callback) {
-        parentLogger.Debug(message, getCallingService(), getCallingMethod, errorObj, callback);
+        parentLogger.Debug(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
@@ -49,7 +49,7 @@ let logger = {
      * @param {function} callback - Optional callback method
      */
     Trace: function(message, errorObj, callback) {
-        parentLogger.Trace(message, getCallingService(), getCallingMethod, errorObj, callback);
+        parentLogger.Trace(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
@@ -59,7 +59,7 @@ let logger = {
      * @param {function} callback - Optional callback method
      */
     Info: function(message, errorObj, callback) {
-        parentLogger.Info(message, getCallingService(), getCallingMethod, errorObj, callback);
+        parentLogger.Info(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
@@ -69,7 +69,7 @@ let logger = {
      * @param {function} callback - Optional callback method
      */
     Warn: function(message, errorObj, callback) {
-        parentLogger.Warn(message, getCallingService(), getCallingMethod, errorObj, callback);
+        parentLogger.Warn(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
@@ -79,7 +79,7 @@ let logger = {
      * @param {function} callback - Optional callback method
      */
     Error: function(message, errorObj, callback) {
-        parentLogger.Error(message, getCallingService(), getCallingMethod, errorObj, callback);
+        parentLogger.Error(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
@@ -89,7 +89,7 @@ let logger = {
      * @param {function} callback - Optional callback method
      */
     Fatal: function(message, errorObj, callback) {
-        parentLogger.Fatal(message, getCallingService(), getCallingMethod, errorObj, callback);
+        parentLogger.Fatal(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
@@ -100,7 +100,7 @@ let logger = {
      * @param {function} callback - Optional callback method
      */
     Log: function(level, message, errorObj, callback) {
-        parentLogger.Log(level, message, getCallingService(), getCallingMethod, errorObj, callback);
+        parentLogger.Log(level, message, getCallingService(), getCallingMethod(), errorObj, callback);
     }
 }
 

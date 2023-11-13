@@ -1,6 +1,6 @@
 {
   "name": "better-node-file-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NPM package node-file-logger made easier.",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,11 @@
   },
   "keywords": [
     "file",
-    "logger",
+    "file logger",
     "logging",
     "node-file-logger",
     "logger",
-    "file",
-    "logging"
+    "file logging"
   ],
   "author": "Adam Seidman",
   "license": "MIT",
