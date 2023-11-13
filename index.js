@@ -28,7 +28,13 @@ let logger = {
      */
     QuickInit: function(prefix) {
         parentLogger.SetUserOptions({
-            'fileNamePrefix': prefix
+            'fileNamePrefix': prefix,
+            "fileNameExtension": ".log",
+            "dateFormat": "YYYY_MM_D",
+            "timeFormat": "h:mm:ss A",
+            "fileNameSuffix": "",
+            "onlyFileLogging": false,
+            "logLevel": "debug"
         });
     },
 
