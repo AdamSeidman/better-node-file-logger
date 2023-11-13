@@ -17,6 +17,7 @@ log.QuickInit('LogPrefix_') // Optional prefix instead of SetUserOptions()
 ```
 
 For more info on logging, see [original library](https://github.com/routbisu/node-file-logger/tree/master).
+Note, I changed all of the original functions to camelCase. This is because I am a menace.
 
 ## License
 MIT
