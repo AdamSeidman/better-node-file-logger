@@ -24,13 +24,13 @@ const getCallingMethod = function() {
 };
 
 let logger = {
-    SetUserOptions: parentLogger.SetUserOptions,
+    setUserOptions: parentLogger.SetUserOptions,
 
     /**
      * Quickly initialize a custom logging scheme
      * @param {string} prefix - "fileNamePrefiix" of logging files 
      */
-    QuickInit: function(prefix) {
+    quickInit: function(prefix) {
         parentLogger.SetUserOptions({
             'fileNamePrefix': prefix,
             "fileNameExtension": ".log",
@@ -43,12 +43,12 @@ let logger = {
     },
 
     /**
-     * Log a Info message
+     * Log a debug message
      * @param {string} message - Message to log
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    Debug: function(message, errorObj, callback) {
+    debug: function(message, errorObj, callback) {
         parentLogger.Debug(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
@@ -58,37 +58,37 @@ let logger = {
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    Trace: function(message, errorObj, callback) {
+    trace: function(message, errorObj, callback) {
         parentLogger.Trace(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
-     * Log a info message
+     * Log an info message
      * @param {string} message - Message to log
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    Info: function(message, errorObj, callback) {
+    info: function(message, errorObj, callback) {
         parentLogger.Info(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
-     * Log a warn message
+     * Log a warning message
      * @param {string} message - Message to log
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    Warn: function(message, errorObj, callback) {
+    warn: function(message, errorObj, callback) {
         parentLogger.Warn(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
-     * Log a error message
+     * Log an error message
      * @param {string} message - Message to log
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    Error: function(message, errorObj, callback) {
+    error: function(message, errorObj, callback) {
         parentLogger.Error(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
@@ -98,18 +98,18 @@ let logger = {
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    Fatal: function(message, errorObj, callback) {
+    gatal: function(message, errorObj, callback) {
         parentLogger.Fatal(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 
     /**
-     * Log a message of a specified level
+     * Log a message of any specified level
      * @param {string} level - Log level
      * @param {string} message - Message to log
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    Log: function(level, message, errorObj, callback) {
+    log: function(level, message, errorObj, callback) {
         parentLogger.Log(level, message, getCallingService(), getCallingMethod(), errorObj, callback);
     }
 }
