@@ -30,14 +30,14 @@ let logger = {
      * Quickly initialize a custom logging scheme
      * @param {string} prefix - "fileNamePrefix" of logging files 
      */
-    quickInit: function(prefix) {
+    quickInit: function(prefix, onlyFileLogging) {
         parentLogger.SetUserOptions({
             'fileNamePrefix': prefix,
             "fileNameExtension": ".log",
             "dateFormat": "YYYY_MM_D",
             "timeFormat": "h:mm:ss A",
             "fileNameSuffix": "",
-            "onlyFileLogging": false,
+            "onlyFileLogging": onlyFileLogging || false,
             "logLevel": "debug"
         });
     },
