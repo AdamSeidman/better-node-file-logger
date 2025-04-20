@@ -98,7 +98,7 @@ let logger = {
      * @param {any} errorObj - Error object
      * @param {function} callback - Optional callback method
      */
-    gatal: function(message, errorObj, callback) {
+    fatal: function(message, errorObj, callback) {
         parentLogger.Fatal(message, getCallingService(), getCallingMethod(), errorObj, callback);
     },
 

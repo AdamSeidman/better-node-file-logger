@@ -1,6 +1,6 @@
 {
   "name": "better-node-file-logger",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "NPM package node-file-logger made easier.",
   "main": "index.js",
   "scripts": {
