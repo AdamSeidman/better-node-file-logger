@@ -13,7 +13,7 @@ node-file-logger
 ```javascript
 // Ceate an instance of better node file logger
 const log = require('better-node-file-logger');
-log.QuickInit('LogPrefix_') // Optional prefix instead of SetUserOptions()
+log.quickInit('LogPrefix_') // Optional prefix instead of SetUserOptions()
 ```
 
 For more info on logging, see [original library](https://github.com/routbisu/node-file-logger/tree/master).
